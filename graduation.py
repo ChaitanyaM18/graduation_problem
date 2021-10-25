@@ -1,10 +1,10 @@
 import itertools
 
 def attend_graduation(n):
-    attendance = list(itertools.product("AP", repeat=n))
+    attendance = list(itertools.product("AP", repeat=n))#AP denotes Absent and Present
     no_of_ways = []
     not_attend = []
-    absent_str = 'AAAA'
+    absent_str = 'AAAA'#absent for 4 or more consecutive days
 
     for i in attendance:
         abs_ = "".join(i)
